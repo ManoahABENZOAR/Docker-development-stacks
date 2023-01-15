@@ -1,0 +1,88 @@
+	
+function afftof(tof,ntof) {
+		nom=document.getElementById(ntof).innerHTML;
+		newtoff=window.open(tof,"Fenêtre de produit","toolbar=no, status=no, resizable=yes, scrollbars=no, menubar=no, width=350, height=350");
+		newtoff.document.write("<html><head>" );
+		newtoff.document.write("<title>Zoom</title>" );
+		newtoff.document.write("<style type=text/css>" );
+		newtoff.document.write("body {" );
+		newtoff.document.write("margin:0;" );
+		newtoff.document.write("padding:0;" );
+		newtoff.document.write("color:white;" );
+		newtoff.document.write("background-color:darkgrey; }" );
+		newtoff.document.write("</style>" );
+		newtoff.document.write("</head>" );
+		newtoff.document.write("<body>" );
+		newtoff.document.write("<center>" );
+				newtoff.document.write("<p>"+nom+"</p>" );
+		newtoff.document.write("<img src="+tof+"  height=80%  width=90% >" );
+		newtoff.document.write("<center>" );
+		newtoff.document.write("<input type='button' value='Fermer' onClick='window.close()' >" );
+		newtoff.document.write("</body></html>" );
+}
+
+function voirstock(alm, alm2){
+			node=document.getElementById(alm);
+			node2=document.getElementById(alm2);
+			
+			if (node.style.display=="none") {
+			node.style.display="table-cell";
+			node2.style.display="table-cell";
+			}else{
+				node.style.display = "none";
+				node2.style.display="none";
+			}
+			
+}
+
+function addCaddie(abc,abcU,abc2,abcR,abcD){
+		nbA=document.getElementById(abc);
+		Prix=document.getElementById(abc2);
+		PrixU=document.getElementById(abcU);
+		RES=document.getElementById(abcR);
+		RESD=document.getElementById(abcD);
+		
+		var max = RES.innerHTML;
+		maxD=RESD.innerHTML;
+		var nbAB=parseInt(nbA.innerHTML, 10);
+		if (nbAB+1 <= maxD){
+		nbAB=nbAB+1;
+		max=max-1;
+		var PrixUB=parseFloat(PrixU.innerHTML);
+			Prix.innerHTML=Math.round(PrixUB*nbAB * 100) / 100;
+			nbA.innerHTML=nbAB;
+			RES.innerHTML=max;
+		}else {
+			var PrixUB=parseFloat(PrixU.innerHTML);
+			Prix.innerHTML=Math.round(PrixUB*nbAB * 100) / 100;
+			nbA.innerHTML=nbAB;
+			RES.innerHTML=max;
+		}			
+}
+
+function supCaddie(abc,abcU,abc2,abcR,abcD){
+		nbA=document.getElementById(abc);
+		Prix=document.getElementById(abc2);
+		PrixU=document.getElementById(abcU);
+		RES=document.getElementById(abcR);
+		RESD=document.getElementById(abcD);
+		
+		var max = RES.innerHTML;
+		maxD=RESD.innerHTML;
+		var nbAB=parseInt(nbA.innerHTML, 10);
+		if (nbAB-1 >=0 ){
+		nbAB=nbAB-1;
+		max=parseInt(max, 10)+1;
+		var PrixUB=parseFloat(PrixU.innerHTML);
+			Prix.innerHTML=Math.round(PrixUB*nbAB * 100) / 100;
+			nbA.innerHTML=nbAB;
+			RES.innerHTML=max;
+		}else {
+			var PrixUB=parseFloat(PrixU.innerHTML);
+			Prix.innerHTML=Math.round(PrixUB*nbAB * 100) / 100;
+			nbA.innerHTML=nbAB;
+			RES.innerHTML=max;
+		}
+			
+}
+

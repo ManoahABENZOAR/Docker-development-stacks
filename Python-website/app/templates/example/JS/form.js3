@@ -1,0 +1,76 @@
+function verif1(){
+    var date_pas_sure = document.getElementById('valeur').value;
+    var format = /^(\d{1,2}\/){2}\d{4}$/;
+    if(!format.test(date_pas_sure)){
+		alert('Date non valable !')
+		document.getElementById('valeur').focus();
+		document.getElementById('valeur').style.backgroundColor='red';
+		document.getElementById('format').innerHTML=" AU FORMAT jj/mm/aaaa !! 3 ";
+		return false;
+	}	
+    else{
+        var date_temp = date_pas_sure.split('/');
+        date_temp[1] -=1;        // On rectifie le mois !!!
+        var ma_date = new Date();
+        ma_date.setFullYear(date_temp[2]);
+        ma_date.setMonth(date_temp[1]);
+        ma_date.setDate(date_temp[0]);
+        if (date_temp[2]>2021) {
+			alert('Date non valable !');
+			document.getElementById('valeur').focus(); 
+			document.getElementById('valeur').style.backgroundColor='red';
+			document.getElementById('format').innerHTML=" UNE DATE VALIDE AU FORMAT jj/mm/aaaa !!  1";
+			
+            return false;
+         }else {
+			 if(ma_date.getFullYear()==date_temp[2] && ma_date.getMonth()==date_temp[1] && ma_date.getDate()==date_temp[0]){
+				alert('Date valable !');
+				return true;
+			}
+			else{
+				alert('Date non valable !');
+				document.getElementById('valeur').focus();
+				document.getElementById('valeur').style.backgroundColor='red';
+				document.getElementById('format').innerHTML=" UNE DATE VALIDE  AU FORMAT jj/mm/aaaa !!  2 ";
+				return false;
+			}
+		}
+    }
+}
+
+function verif(){
+	var date_pas_sure = document.getElementById('valeur').value;
+    var format = /^(\d{1,2}\/){2}\d{4}$/;
+    if(!format.test(date_pas_sure)){
+		alert('Date non valable !')
+		document.getElementById('valeur').focus();
+		document.getElementById('valeur').style.backgroundColor='red';
+		document.getElementById('format').innerHTML=" AU FORMAT jj/mm/aaaa !!  ";
+		return false;
+	}
+	else {
+			var date_temp = date_pas_sure.split('/');
+			a=parseInt(date_temp[2], 10);// a
+			m=parseInt(date_temp[1], 10);// m
+			j=parseInt(date_temp[0], 10);// j
+			if (a%4 == 0 && a%100 !=0 || a%400 == 0){
+				fev = 29;
+			}else{
+				fev = 28;
+			}
+			nbJours = new Array(31,fev,31,30,31,30,31,31,30,31,30,31);
+			
+			if ( m >= 1 && m <=12 && j >= 1 && j <= nbJours[m-1] ){
+				alert('Date valable !');
+				return true;
+			}else{
+				alert('Date non valable !');
+				document.getElementById('valeur').focus();
+				document.getElementById('valeur').style.backgroundColor='red';
+				document.getElementById('format').innerHTML=" UNE DATE VALIDE  AU FORMAT jj/mm/aaaa !!   ";
+				return false;
+			}
+	}
+}
+
+			
