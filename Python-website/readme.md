@@ -22,5 +22,6 @@ There are 2 containers : a flask one (allow to create light web apps) & redis on
    you can change some part of the code like the html part by example,
    then save the file .py
    you don't need to recreate the container!!
+   (Here the code is out of the container)
    
    Refresh the page and see the chages!
