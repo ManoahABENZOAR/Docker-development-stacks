@@ -1,0 +1,279 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr">
+ <head>
+  <title>Klothees</title>
+<link rel="stylesheet" type="text/css" href="CSS/chausss.css" />
+<script type="text/javascript" src="JS/bouton.js"> </script>
+  	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta http-equiv="content-language" content="FR"/>
+	
+
+ </head>
+
+ <body >
+ <div id='header'> <!-- = header -->
+	<img class="img1" src="img/logo.jpeg" height=161 width=15% >
+	 <h1 class="hhead"> Klozees</h1> </br>
+ <div class="volethorizontal">
+	 <ul >
+					<li>
+						<a href="survetement.html"><img src="img/ics.jfif" height=30 width=30/> <br/>Survêtement</a>
+						
+					</li>
+					<li><a href="chaussure.html"><img src="img/icc.png" height=30 width=30/> <br/>Chaussure</a>
+                        
+                    </li>
+		</ul>
+		
+	</div>
+  </div>
+ 
+ <div class="page"> <!-- = aside -->
+	 
+  <nav class="m2"> <!-- = section -->
+	 <ul>
+		<li><a href="survetement.html"><img src="img/ics.jfif" height=30 width=30/> <br/>Survêtement</a>  </li>
+		<li><a href="chaussure.html"><img src="img/icc.png" height=30 width=30/> <br/>Chaussure</a></li>
+	</ul>
+  </nav> 
+ 	   
+ <div class="page"> <!-- = aside -->
+	 <br/>
+	<center>
+		<b class="tit">Produits à la une </br>
+		</b>
+		<div class="tab">
+	<table class="table" width="100%">
+		<thead>
+			<tr>
+				<th colspan="4" ><span id="ntof">Crampons du FC Barcelone</span></th>
+				<th id="cach1" style="display : none"colspan="4"> Quantité commandée</th> 
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td><center> <a href="javascript:afftof('img/crB.jfif','ntof')">
+							 <img src="img/crB.jfif" height=100 width=100/> 
+							 </a>
+					</center></td> <!-- enverra vers la page dédiée à l'article -->
+				<td><center>Prix :<span id="prixU"> 54.49 </span>€</center></td>
+				<td><center>Origine : Espagne
+					</center></td>
+				<td><center>Référence: 95234	</center></td>
+				<td id="cach2" style="display : none"><center> 
+						<span id="res"> 10 </span><br/><span id="resD" style="display : none"> 10 </span><br/>
+						Nombre d'articles = <span id="nbArticle">0</span><br />
+						Prix = <span id="prix">0</span>€<br />
+						<input type="submit" value="-" name="add" class="button" onclick="supCaddie('nbArticle','prixU','prix','res','resD')">
+						<input type="submit" value="+" name="add" class="button" onclick="addCaddie('nbArticle','prixU','prix','res','resD')">
+						<br/>
+					<input type="submit" value="Ajouter au panier" name="boutonpanier" class="button" >
+					</br>	</center>
+				</td>
+			</tr>
+		</tbody>
+		
+	</table> 
+<!--	<input type="submit" value="Stock" name="boutonstock" class="button" onclick="voirstock('cach2','cach1')"> -->
+	</br>
+	</br>
+	<!-- Produit 2 -->
+	<table class="table" width="100%">
+		<thead>
+			<tr>
+				<th colspan="4" ><span id="ntof1">Crampons de Mbappe (PSG)</span></th>
+				<th id="cach11" style="display : none"colspan="4"> Quantité commandée</th> 
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td><center> <a href="javascript:afftof('img/crPSG.jfif','ntof1')">
+							 <img src="img/crPSG.jfif" height=100 width=100/> 
+							 </a>
+					</center></td> <!-- enverra vers la page dédiée à l'article -->
+				<td><center>Prix :<span id="prixU1"> 54.99 </span>€</center></td>
+				<td><center>Origine : France
+					</center></td>
+				<td><center>Référence: 95564	</center></td>
+				<td id="cach21" style="display : none"><center> 
+						<span id="res1"> 15 </span><br/><span id="resD1" style="display : none"> 15 </span><br/>
+						Nombre d'articles = <span id="nbArticle1">0</span><br />
+						Prix = <span id="prix1">0</span>€<br />
+						<input type="submit" value="-" name="add" class="button" onclick="supCaddie('nbArticle1','prixU1','prix1','res1','resD1')">
+						<input type="submit" value="+" name="add" class="button" onclick="addCaddie('nbArticle1','prixU1','prix1','res1','resD1')">
+						<br/>
+					<input type="submit" value="Ajouter au panier" name="boutonpanier" class="button" >
+					</br>	</center>
+				</td>
+			</tr>
+		</tbody>
+		
+	</table> 
+	<!-- <input type="submit" value="Stock" name="boutonstock" class="button" onclick="voirstock('cach21','cach11')"> -->
+	</br>
+	
+	<!-- Produit 3 -->
+	<table class="table" width="100%">
+		<thead>
+			<tr>
+				<th colspan="4" ><span id="ntof2">Crampons du Real</span></th>
+				<th id="cach12" style="display : none"colspan="4"> Quantité commandée</th> 
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td><center> <a href="javascript:afftof('img/crReal.jfif','ntof2')">
+							 <img src="img/crReal.jfif" height=100 width=100/> 
+							 </a>
+					</center></td> <!-- enverra vers la page dédiée à l'article -->
+				<td><center>Prix :<span id="prixU2"> 50.99 </span>€</center></td>
+				<td><center>Origine : Espagne 
+					</center></td>
+				<td><center>Référence: 98794	</center></td>
+				<td id="cach22" style="display : none"><center> 
+						<span id="res2"> 7 </span><br/><span id="resD2" style="display : none"> 7 </span><br/>
+						Nombre d'articles = <span id="nbArticle2">0</span><br />
+						Prix = <span id="prix2">0</span>€<br />
+						<input type="submit" value="-" name="add" class="button" onclick="supCaddie('nbArticle2','prixU2','prix2','res2','resD2')">
+						<input type="submit" value="+" name="add" class="button" onclick="addCaddie('nbArticle2','prixU2','prix2','res2','resD2')">
+						<br/>
+					<input type="submit" value="Ajouter au panier" name="boutonpanier" class="button" >
+					</br>	</center>
+				</td>
+			</tr>
+		</tbody>
+		
+	</table> 
+<!--	<input type="submit" value="Stock" name="boutonstock" class="button" onclick="voirstock('cach22','cach12')"> -->
+	</br>
+	<!-- Produit 4 -->
+	<table class="table" width="100%">
+		<thead>
+			<tr>
+				<th colspan="4" ><span id="ntof3">Crampons du Bayern</span></th>
+				<th id="cach13" style="display : none"colspan="4"> Quantité commandée</th> 
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td><center> <a href="javascript:afftof('img/crBay.jfif','ntof3')">
+							 <img src="img/crBay.jfif" height=100 width=100/> 
+							 </a>
+					</center></td> <!-- enverra vers la page dédiée à l'article -->
+				<td><center>Prix :<span id="prixU3"> 60.99 </span>€</center></td>
+				<td><center>Origine : Allemagne
+					</center></td>
+				<td><center>Référence: 96315	</center></td>
+				<td id="cach23" style="display : none"><center> 
+						<span id="res3"> 23 </span><br/><span id="resD3" style="display : none"> 23 </span><br/>
+						Nombre d'articles = <span id="nbArticle3">0</span><br />
+						Prix = <span id="prix3">0</span>€<br />
+						<input type="submit" value="-" name="add" class="button" onclick="supCaddie('nbArticle3','prixU3','prix3','res3','resD3')">
+						<input type="submit" value="+" name="add" class="button" onclick="addCaddie('nbArticle3','prixU3','prix3','res3','resD3')">
+						<br/>
+					<input type="submit" value="Ajouter au panier" name="boutonpanier" class="button" >
+					</br>	</center>
+				</td>
+			</tr>
+		</tbody>
+		
+	</table> 
+<!--	<input type="submit" value="Stock" name="boutonstock" class="button" onclick="voirstock('cach23','cach13')"> -->
+	</br>
+	<!-- Produit 5 -->
+	<table class="table" width="100%">
+		<thead>
+			<tr>
+				<th colspan="4" ><span id="ntof4">Crampons du Borussia</span></th>
+				<th id="cach14" style="display : none"colspan="4"> Quantité commandée</th> 
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td><center> <a href="javascript:afftof('img/crDort.jfif','ntof4')">
+							 <img src="img/crDort.jfif" height=100 width=100/> 
+							 </a>
+					</center></td> <!-- enverra vers la page dédiée à l'article -->
+				<td><center>Prix :<span id="prixU4"> 50.99 </span>€</center></td>
+				<td><center>Origine : Allemagne
+					</center></td>
+				<td><center>Référence: 97315	</center></td>
+				<td id="cach24" style="display : none"><center> 
+						<span id="res4"> 17 </span><br/><span id="resD4" style="display : none"> 17 </span><br/>
+						Nombre d'articles = <span id="nbArticle4">0</span><br />
+						Prix = <span id="prix4">0</span>€<br />
+						<input type="submit" value="-" name="add" class="button" onclick="supCaddie('nbArticle4','prixU4','prix4','res4','resD4')">
+						<input type="submit" value="+" name="add" class="button" onclick="addCaddie('nbArticle4','prixU4','prix4','res4','resD4')">
+						<br/>
+					<input type="submit" value="Ajouter au panier" name="boutonpanier" class="button" >
+					</br>	</center>
+				</td>
+			</tr>
+		</tbody>
+		
+	</table> 
+<!--	<input type="submit" value="Stock" name="boutonstock" class="button" onclick="voirstock('cach24','cach14')"> -->
+	</br>	
+
+	<!-- Produit 6 -->
+	<table class="table" width="100%">
+		<thead>
+			<tr>
+				<th colspan="4" ><span id="ntof5">Chaussure futuriste Nike</span></th>
+				<th id="cach15" style="display : none"colspan="4"> Quantité commandée</th> 
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td><center> <a href="javascript:afftof('img/chaussfutur.jpg','ntof5')">
+							 <img src="img/chaussfutur.jpg" height=100 width=100/> 
+							 </a>
+					</center></td> <!-- enverra vers la page dédiée à l'article -->
+				<td><center>Prix :<span id="prixU5"> 130.99 </span>€</center></td>
+				<td><center>Origine : USA
+					</center></td>
+				<td><center>Référence: 97319	</center></td>
+				<td id="cach25" style="display : none"><center> 
+						<span id="res5"> 20 </span><br/><span id="resD5" style="display : none"> 20 </span><br/>
+						Nombre d'articles = <span id="nbArticle5">0</span><br />
+						Prix = <span id="prix5">0</span>€<br />
+						<input type="submit" value="-" name="add" class="button" onclick="supCaddie('nbArticle5','prixU5','prix5','res5','resD5')">
+						<input type="submit" value="+" name="add" class="button" onclick="addCaddie('nbArticle5','prixU5','prix5','res5','resD5')">
+						<br/>
+					<input type="submit" value="Ajouter au panier" name="boutonpanier" class="button" >
+					</br>	</center>
+				</td>
+			</tr>
+		</tbody>
+		
+	</table> 
+	<input type="submit" value="Stock" name="boutonstock" class="button" onclick="voirstock('cach25','cach15'); voirstock('cach2','cach1'); voirstock('cach21','cach11'); voirstock('cach22','cach12'); voirstock('cach23','cach13'); voirstock('cach24','cach14')">
+	</br>	
+	
+	</div>
+	</center>
+	
+	</br>
+
+  </div>
+  
+  
+           
+  <div id='footer'> <!-- = footer -->
+	  
+		<p align="center">Copyright 2021 - Abenzoar Manoah 
+			<br/> 06 98 96 41 45 15 
+			<br/> 30 rue de la marguarita
+		</p>
+		
+  </div>
+         
+  
+  
+
+
+ </body>
+</html>
+
+
+
