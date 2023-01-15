@@ -39,6 +39,7 @@ Install Docker
    As it's a development stack,
    after changing the value of x and saving the file .py
    you don't need to recreate the container!!
+   (Here the code is in the container : due to permission troubles; but the volume works)
    
    Run again 
    
