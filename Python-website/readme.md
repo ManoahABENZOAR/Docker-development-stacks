@@ -10,7 +10,7 @@ Install Docker
   
  Open the browser and type
      
-     http:://127.0.0.1:8000/
+     http:://127.0.0.1:8080/
 
 # Test the environment
   Each time you refresh the pages app.py creates a new files named index+"n+1"+.html,
