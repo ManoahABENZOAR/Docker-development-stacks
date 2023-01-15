@@ -6,10 +6,6 @@ Created on Thu Dec 29 18:20:07 2022
 @author: cytech
 """
 
-
-
-
-
 import time
 
 import redis
@@ -41,8 +37,7 @@ def home():
     <head></head>
     <body>
     <p> I have been seen {} times. </p>
-    <p>The resulting image of the openCV part :</p>
-    <p><img src="" /></p>
+    <p>This using redis!</p>
     </body>
     </html>
     """.format(count)
