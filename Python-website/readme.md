@@ -4,6 +4,8 @@
 Install Docker
 
 # Execution 
+There are 2 containers : a flask one (allow to create light web apps) & redis one (an open source, in-memory data store used by millions of developers as a database, cache, streaming engine, and message broker)
+
   Create the container : 
   
     docker-compose up
