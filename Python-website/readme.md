@@ -12,7 +12,7 @@ There are 2 containers : a flask one (allow to create light web apps) & redis on
   
  Open the browser and type
      
-     http:://127.0.0.1:8080/
+     http:://localhost:8080/
 
 # Test the environment
   Each time you refresh the pages app.py creates a new files named index+"n+1"+.html,
