@@ -25,3 +25,6 @@ There are 2 containers : a flask one (allow to create light web apps) & redis on
    (Here the code is out of the container)
    
    Refresh the page and see the chages!
+   
+   BY example you can use my old e-commerce website, which is in the folder "example".
+   And try displaying it by changing the code in app.py!
